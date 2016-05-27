@@ -49,3 +49,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+/*
+ 自定义LOG的目的:
+ 在开发阶段自动显示LOG
+ 在发布阶段自动屏蔽LOG
+ 
+ print(__FUNCTION__)  // 打印所在的方法
+ print(__LINE__)     // 打印所在的行
+ print(__FILE__)     // 打印所在文件的路径
+ 
+ 方法名称[行数]: 输出内容
+ */
+func NJLog<T>(message: T, method: String = #function, line: Int = #line)
+{
+    #if DEBUG
+        print("\(method)[\(line)]: \(message)")
+    #endif
+}
+

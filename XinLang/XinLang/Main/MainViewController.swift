@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QorumLogs
 
 class MainViewController: UITabBarController {
 
@@ -14,6 +15,10 @@ class MainViewController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        addChildViewControllers()
+        
+        QL2("mylog")
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +26,23 @@ class MainViewController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
+    func addChildViewControllers()  {
+        addChildViewController(HomeTableViewController(), title: "首页", imageName: "tabbar_home")
+        addChildViewController(MessageTableViewController(), title: "消息", imageName: "tabbar_message_center")
+        addChildViewController(DiscoverTableViewController(), title: "发现", imageName: "tabbar_discover")
+        addChildViewController(ProfileTableViewController(), title: "我", imageName: "tabbar_profile")
 
+    }
+    func addChildViewController(childController: UIViewController, title: String, imageName: String)  {
+        childController.title = title
+        childController.tabBarItem.image = UIImage(named: imageName)
+        childController.tabBarItem.selectedImage = UIImage(named: imageName + "_highlighted")
+    
+        tabBar.tintColor = UIColor.orangeColor()
+        let nav = UINavigationController()
+        nav.addChildViewController(childController)
+        addChildViewController(nav)
+    }
     /*
     // MARK: - Navigation
 
