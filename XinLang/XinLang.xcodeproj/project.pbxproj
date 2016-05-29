@@ -16,6 +16,8 @@
 		101A65461CF7428100316487 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A65451CF7428100316487 /* HomeTableViewController.swift */; };
 		101A65481CF7429600316487 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A65471CF7429600316487 /* MessageTableViewController.swift */; };
 		101A654A1CF742A800316487 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A65491CF742A800316487 /* ProfileTableViewController.swift */; };
+		1097093F1CF9D36D00B61116 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 1097093D1CF9D36D00B61116 /* MainVCSettings.json */; };
+		109709401CF9D36D00B61116 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097093E1CF9D36D00B61116 /* NullViewController.swift */; };
 		D864AD9FB6F1B39018A2CAA3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73A59888A3995A129BB7EB1 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		101A65451CF7428100316487 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		101A65471CF7429600316487 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		101A65491CF742A800316487 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		1097093D1CF9D36D00B61116 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		1097093E1CF9D36D00B61116 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
 		451F29E9C62C32FBD111594F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B73A59888A3995A129BB7EB1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77B1AECD0E5BDA03C0E6182 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 		101A653B1CF741EA00316487 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1097093C1CF9D36D00B61116 /* Resource */,
 				101A65411CF7425800316487 /* MainViewController.swift */,
 			);
 			path = Main;
@@ -184,6 +189,15 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		1097093C1CF9D36D00B61116 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1097093D1CF9D36D00B61116 /* MainVCSettings.json */,
+				1097093E1CF9D36D00B61116 /* NullViewController.swift */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		286CEEE094F2F286D0A36F35 /* Frameworks */ = {
@@ -310,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1097093F1CF9D36D00B61116 /* MainVCSettings.json in Resources */,
 				101A650F1CF73E6700316487 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +404,7 @@
 				101A65081CF73E6700316487 /* AppDelegate.swift in Sources */,
 				101A65481CF7429600316487 /* MessageTableViewController.swift in Sources */,
 				101A65461CF7428100316487 /* HomeTableViewController.swift in Sources */,
+				109709401CF9D36D00B61116 /* NullViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
