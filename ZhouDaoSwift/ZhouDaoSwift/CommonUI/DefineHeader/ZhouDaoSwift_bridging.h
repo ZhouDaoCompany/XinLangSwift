@@ -15,3 +15,4 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "AFNetworking.h"
 #import "JX_GCDTimerManager.h"
+#import "CYLTabBarController.h"

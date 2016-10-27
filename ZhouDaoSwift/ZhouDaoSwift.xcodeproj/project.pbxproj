@@ -16,6 +16,11 @@
 		181F6A3E1DC03C0C003FEDA9 /* ZhouDaoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F6A3D1DC03C0C003FEDA9 /* ZhouDaoSwiftUITests.swift */; };
 		181F6A551DC05AD1003FEDA9 /* DefineHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F6A541DC05AD1003FEDA9 /* DefineHeader.swift */; };
 		181F6A5A1DC05C21003FEDA9 /* JX_GCDTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F6A591DC05C21003FEDA9 /* JX_GCDTimerManager.m */; };
+		188622DD1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622DC1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift */; };
+		188622EF1DC1ED0500F4BAF8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622EE1DC1ED0500F4BAF8 /* HomeViewController.swift */; };
+		188622F11DC1ED1A00F4BAF8 /* RecomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622F01DC1ED1A00F4BAF8 /* RecomViewController.swift */; };
+		188622F31DC1ED3800F4BAF8 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622F21DC1ED3800F4BAF8 /* ToolsViewController.swift */; };
+		188622F51DC1ED4D00F4BAF8 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622F41DC1ED4D00F4BAF8 /* MeViewController.swift */; };
 		C0004DCE1B5313526BDBDD1F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B6A8451DCC0F403657DF1C /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +59,11 @@
 		181F6A561DC05B76003FEDA9 /* ZhouDaoSwift_bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhouDaoSwift_bridging.h; sourceTree = "<group>"; };
 		181F6A581DC05C21003FEDA9 /* JX_GCDTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JX_GCDTimerManager.h; sourceTree = "<group>"; };
 		181F6A591DC05C21003FEDA9 /* JX_GCDTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JX_GCDTimerManager.m; sourceTree = "<group>"; };
+		188622DC1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLTabBarControllerConfig.swift; sourceTree = "<group>"; };
+		188622EE1DC1ED0500F4BAF8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		188622F01DC1ED1A00F4BAF8 /* RecomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomViewController.swift; sourceTree = "<group>"; };
+		188622F21DC1ED3800F4BAF8 /* ToolsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
+		188622F41DC1ED4D00F4BAF8 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		408EC40FCDFAB6F4A597A9DF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		45B6A8451DCC0F403657DF1C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC9F2DB1F40E62E56FB6A1F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +178,10 @@
 		181F6A511DC05A73003FEDA9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				188622E21DC1ECC400F4BAF8 /* 首页 */,
+				188622E61DC1ECC400F4BAF8 /* 推荐 */,
+				188622DE1DC1ECC400F4BAF8 /* 工具 */,
+				188622EA1DC1ECC400F4BAF8 /* 我的 */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -175,6 +189,7 @@
 		181F6A521DC05A73003FEDA9 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				188622DB1DC1EA4200F4BAF8 /* TabbarView */,
 				181F6A531DC05ABB003FEDA9 /* DefineHeader */,
 			);
 			path = CommonUI;
@@ -196,6 +211,142 @@
 				181F6A591DC05C21003FEDA9 /* JX_GCDTimerManager.m */,
 			);
 			path = JX_GCDTimer;
+			sourceTree = "<group>";
+		};
+		188622DB1DC1EA4200F4BAF8 /* TabbarView */ = {
+			isa = PBXGroup;
+			children = (
+				188622DC1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift */,
+			);
+			path = TabbarView;
+			sourceTree = "<group>";
+		};
+		188622DE1DC1ECC400F4BAF8 /* 工具 */ = {
+			isa = PBXGroup;
+			children = (
+				188622DF1DC1ECC400F4BAF8 /* Model */,
+				188622E01DC1ECC400F4BAF8 /* ViewControllers */,
+				188622E11DC1ECC400F4BAF8 /* Views */,
+			);
+			path = "工具";
+			sourceTree = "<group>";
+		};
+		188622DF1DC1ECC400F4BAF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		188622E01DC1ECC400F4BAF8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				188622F21DC1ED3800F4BAF8 /* ToolsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		188622E11DC1ECC400F4BAF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		188622E21DC1ECC400F4BAF8 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				188622E31DC1ECC400F4BAF8 /* Model */,
+				188622E41DC1ECC400F4BAF8 /* ViewControllers */,
+				188622E51DC1ECC400F4BAF8 /* Views */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		188622E31DC1ECC400F4BAF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		188622E41DC1ECC400F4BAF8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				188622EE1DC1ED0500F4BAF8 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		188622E51DC1ECC400F4BAF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		188622E61DC1ECC400F4BAF8 /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				188622E71DC1ECC400F4BAF8 /* Model */,
+				188622E81DC1ECC400F4BAF8 /* ViewControllers */,
+				188622E91DC1ECC400F4BAF8 /* Views */,
+			);
+			path = "推荐";
+			sourceTree = "<group>";
+		};
+		188622E71DC1ECC400F4BAF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		188622E81DC1ECC400F4BAF8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				188622F01DC1ED1A00F4BAF8 /* RecomViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		188622E91DC1ECC400F4BAF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		188622EA1DC1ECC400F4BAF8 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				188622EB1DC1ECC400F4BAF8 /* Model */,
+				188622EC1DC1ECC400F4BAF8 /* ViewControllers */,
+				188622ED1DC1ECC400F4BAF8 /* Views */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		188622EB1DC1ECC400F4BAF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		188622EC1DC1ECC400F4BAF8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				188622F41DC1ED4D00F4BAF8 /* MeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		188622ED1DC1ECC400F4BAF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1AE7393B7C3CF622900439B6 /* Frameworks */ = {
@@ -403,10 +554,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188622F51DC1ED4D00F4BAF8 /* MeViewController.swift in Sources */,
 				181F6A201DC03C0C003FEDA9 /* ViewController.swift in Sources */,
+				188622F11DC1ED1A00F4BAF8 /* RecomViewController.swift in Sources */,
 				181F6A551DC05AD1003FEDA9 /* DefineHeader.swift in Sources */,
 				181F6A5A1DC05C21003FEDA9 /* JX_GCDTimerManager.m in Sources */,
+				188622F31DC1ED3800F4BAF8 /* ToolsViewController.swift in Sources */,
 				181F6A1E1DC03C0C003FEDA9 /* AppDelegate.swift in Sources */,
+				188622DD1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift in Sources */,
+				188622EF1DC1ED0500F4BAF8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
