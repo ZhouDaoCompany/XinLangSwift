@@ -16,6 +16,8 @@
 		181F6A3E1DC03C0C003FEDA9 /* ZhouDaoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F6A3D1DC03C0C003FEDA9 /* ZhouDaoSwiftUITests.swift */; };
 		181F6A551DC05AD1003FEDA9 /* DefineHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F6A541DC05AD1003FEDA9 /* DefineHeader.swift */; };
 		181F6A5A1DC05C21003FEDA9 /* JX_GCDTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F6A591DC05C21003FEDA9 /* JX_GCDTimerManager.m */; };
+		18526E2E1DC2EA7A003DF559 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18526E2D1DC2EA7A003DF559 /* UIColor+Helper.m */; };
+		185D3B351DC2DEFA000E77C6 /* CYLBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D3B341DC2DEFA000E77C6 /* CYLBaseNavigationController.swift */; };
 		188622DD1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622DC1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift */; };
 		188622EF1DC1ED0500F4BAF8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622EE1DC1ED0500F4BAF8 /* HomeViewController.swift */; };
 		188622F11DC1ED1A00F4BAF8 /* RecomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622F01DC1ED1A00F4BAF8 /* RecomViewController.swift */; };
@@ -59,6 +61,9 @@
 		181F6A561DC05B76003FEDA9 /* ZhouDaoSwift_bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhouDaoSwift_bridging.h; sourceTree = "<group>"; };
 		181F6A581DC05C21003FEDA9 /* JX_GCDTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JX_GCDTimerManager.h; sourceTree = "<group>"; };
 		181F6A591DC05C21003FEDA9 /* JX_GCDTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JX_GCDTimerManager.m; sourceTree = "<group>"; };
+		18526E2C1DC2EA7A003DF559 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
+		18526E2D1DC2EA7A003DF559 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Helper.m"; sourceTree = "<group>"; };
+		185D3B341DC2DEFA000E77C6 /* CYLBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYLBaseNavigationController.swift; sourceTree = "<group>"; };
 		188622DC1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLTabBarControllerConfig.swift; sourceTree = "<group>"; };
 		188622EE1DC1ED0500F4BAF8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		188622F01DC1ED1A00F4BAF8 /* RecomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +159,7 @@
 		181F6A4D1DC05A08003FEDA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				18526E2A1DC2EA7A003DF559 /* Tools */,
 				181F6A4E1DC05A08003FEDA9 /* images */,
 				181F6A4F1DC05A08003FEDA9 /* Utility */,
 			);
@@ -213,10 +219,28 @@
 			path = JX_GCDTimer;
 			sourceTree = "<group>";
 		};
+		18526E2A1DC2EA7A003DF559 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				18526E2B1DC2EA7A003DF559 /* UIColor+Helper */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		18526E2B1DC2EA7A003DF559 /* UIColor+Helper */ = {
+			isa = PBXGroup;
+			children = (
+				18526E2C1DC2EA7A003DF559 /* UIColor+Helper.h */,
+				18526E2D1DC2EA7A003DF559 /* UIColor+Helper.m */,
+			);
+			path = "UIColor+Helper";
+			sourceTree = "<group>";
+		};
 		188622DB1DC1EA4200F4BAF8 /* TabbarView */ = {
 			isa = PBXGroup;
 			children = (
 				188622DC1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift */,
+				185D3B341DC2DEFA000E77C6 /* CYLBaseNavigationController.swift */,
 			);
 			path = TabbarView;
 			sourceTree = "<group>";
@@ -558,7 +582,9 @@
 				181F6A201DC03C0C003FEDA9 /* ViewController.swift in Sources */,
 				188622F11DC1ED1A00F4BAF8 /* RecomViewController.swift in Sources */,
 				181F6A551DC05AD1003FEDA9 /* DefineHeader.swift in Sources */,
+				18526E2E1DC2EA7A003DF559 /* UIColor+Helper.m in Sources */,
 				181F6A5A1DC05C21003FEDA9 /* JX_GCDTimerManager.m in Sources */,
+				185D3B351DC2DEFA000E77C6 /* CYLBaseNavigationController.swift in Sources */,
 				188622F31DC1ED3800F4BAF8 /* ToolsViewController.swift in Sources */,
 				181F6A1E1DC03C0C003FEDA9 /* AppDelegate.swift in Sources */,
 				188622DD1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift in Sources */,

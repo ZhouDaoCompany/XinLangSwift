@@ -16,3 +16,4 @@
 #import "AFNetworking.h"
 #import "JX_GCDTimerManager.h"
 #import "CYLTabBarController.h"
+#import "UIColor+Helper.h"
