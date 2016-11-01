@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("首页")
         // Do any additional setup after loading the view.
     }
 

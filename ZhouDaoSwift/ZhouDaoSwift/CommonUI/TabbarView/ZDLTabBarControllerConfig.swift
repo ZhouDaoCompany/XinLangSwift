@@ -10,8 +10,17 @@ import UIKit
 
 class ZDLTabBarControllerConfig: NSObject {
     
-    var tabBarController : CYLTabBarController!
+    var tabBarController : CYLTabBarController! {
+        
+        if self.tabBarController == nil {
+            
+            self.tabBarController =
+        }
+        
+    }
     
+    
+    //MARK:
     
     
     //Mark: 视图控制器数组
@@ -56,14 +65,14 @@ class ZDLTabBarControllerConfig: NSObject {
         var normalAttrs  = Dictionary<String, AnyObject>()
         normalAttrs[NSForegroundColorAttributeName] = UIColor.hexString(toColor: "666666")
         
-        var selectedAttrs : [String : AnyObject] =  [NSForegroundColorAttributeName : UIColor.hexString(toColor: "00c8aa")]
+        let selectedAttrs : [String : AnyObject] =  [NSForegroundColorAttributeName : UIColor.hexString(toColor: "00c8aa")]
         
         let tabBar = UITabBarItem.appearance()
         tabBar.titlePositionAdjustment = UIOffsetMake(0, -2);
         tabBar.setTitleTextAttributes(normalAttrs, for: UIControlState.normal)
         tabBar.setTitleTextAttributes(selectedAttrs, for: UIControlState.selected)
         
-        var tab = UITabBar.appearance()
+        let tab = UITabBar.appearance()
 //        tab.backgroundImage = 
         tab.backgroundColor = UIColor.white
         tab.shadowImage = UIImage(named: "tapbar_top_line")
