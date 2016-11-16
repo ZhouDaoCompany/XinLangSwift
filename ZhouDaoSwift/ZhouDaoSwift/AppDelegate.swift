@@ -16,13 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UITabBarControllerDelegat
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = UIColor.white
-        
-        let tabBarControllerConfig = ZDLTabBarControllerConfig()
-       // tabBarControllerConfig.tabBarController.delegate = self
-        self.window?.rootViewController = tabBarControllerConfig.tabBarController
-        self.window?.makeKeyAndVisible()
+//        self.window = UIWindow.init(frame: UIScreen.main.bounds)
+//        self.window?.backgroundColor = UIColor.white
+//        
+//        let tabBarControllerConfig = ZDLTabBarControllerConfig()
+//       // tabBarControllerConfig.tabBarController.delegate = self
+//        self.window?.rootViewController = tabBarControllerConfig.tabBarController
+//        self.window?.makeKeyAndVisible()
         
         
         return true

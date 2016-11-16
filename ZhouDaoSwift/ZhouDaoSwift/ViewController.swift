@@ -19,44 +19,33 @@ class ViewController: UIViewController {
     //MARK: 布局tabbar
     func creatTabbarUI() {
         
-        let testString = "hhjsbcjajhcsavchjaaaaasvxhsafdubac"
-        var testDictionary : [Character : Int] = [:]
+        let testString = "hdhcgbdjcbehuvchwcedqbjbfucegryubwxwnkwqc"
+        var testDictionary = Dictionary<Character, Int>()
         
-        for ch in testString.characters {
-            
-            let num = testDictionary[ch]
-            
+        
+        testString.characters.forEach { (Character) in
+            let num = testDictionary[Character]
             if num == nil {
-                
-                testDictionary[ch] = 1
+                testDictionary[Character] = 1
             } else {
-                
-                testDictionary[ch] = num! + 1
+                testDictionary[Character] = num! + 1
             }
         }
         
         var maxCount = 0
-        for count in testDictionary.values {
-            
-            if maxCount < count {
+        testDictionary.forEach { (key: Character, value: Int) in
+    
+            if maxCount < value {
                 
-                maxCount = count
+                maxCount = value
             }
         }
-        
-        for (ch , num) in testDictionary {
+        print("最大数是\(maxCount)")
+        testDictionary.forEach { (key: Character, value: Int) in
             
-            if maxCount == num {
+            if value == maxCount {
                 
-                let alertController = UIAlertController(title: "答案", message: "数量最多的字符是: \(ch)", preferredStyle: UIAlertControllerStyle.alert)
-                let okAction = UIAlertAction(title: "确定", style: UIAlertActionStyle.default, handler: { (UIAlertAction) in
-                    
-                })
-                alertController.addAction(okAction)
-                self.present(alertController, animated: true, completion: {
-                    
-                })
-                
+                print("最大的字符是\(key)")
             }
         }
         

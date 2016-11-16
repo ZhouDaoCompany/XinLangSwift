@@ -10,18 +10,15 @@ import UIKit
 
 class ZDLTabBarControllerConfig: NSObject {
     
-    var tabBarController : CYLTabBarController! {
-        
-        if self.tabBarController == nil {
-            
-            self.tabBarController =
-        }
-        
-    }
     
-    
-    //MARK:
-    
+    var tabBarController : CYLTabBarController!
+//    {
+//        
+//        let tabBarController = CYLTabBarController!.init(viewControllers: viewControllers() as [UIViewController!], tabBarItemsAttributes: tabBarItemsAttributesForController() as [Dictionary!])
+//        customizeTabBarAppearance()
+//        return tabBarController
+//    }
+//    
     
     //Mark: 视图控制器数组
     func viewControllers() -> NSArray {
@@ -31,7 +28,6 @@ class ZDLTabBarControllerConfig: NSObject {
         
         let recomVC = RecomViewController()
         let secNav  = CYLBaseNavigationController(rootViewController: recomVC)
-        
         
         let toolVC = ToolsViewController()
         let thirdNav  = CYLBaseNavigationController(rootViewController: toolVC)
@@ -79,5 +75,6 @@ class ZDLTabBarControllerConfig: NSObject {
                 
     }
     
+
 
 }

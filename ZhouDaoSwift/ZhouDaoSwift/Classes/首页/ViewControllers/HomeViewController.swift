@@ -15,6 +15,14 @@ class HomeViewController: UIViewController {
 
         print("首页")
         // Do any additional setup after loading the view.
+        
+        for view in self.view.subviews as [UIView] {
+            
+            view.removeFromSuperview()
+            
+        }
+
+        
     }
 
     override func didReceiveMemoryWarning() {
