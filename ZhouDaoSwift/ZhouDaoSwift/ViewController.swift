@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         
         creatTabbarUI()
     }
+    
     //MARK: 布局tabbar
     func creatTabbarUI() {
         
@@ -53,6 +54,7 @@ class ViewController: UIViewController {
     }
     
 
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
