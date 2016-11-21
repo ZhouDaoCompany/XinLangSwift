@@ -7,17 +7,19 @@
 //
 
 import UIKit
+import Foundation
 
 class ZDLTabBarControllerConfig: NSObject {
     
     
     var tabBarController : CYLTabBarController! {
-        
-        let tabBarController = CYLTabBarController!.init(viewControllers: viewControllers() as [UIViewController!], tabBarItemsAttributes: tabBarItemsAttributesForController() as [Dictionary!])
-        customizeTabBarAppearance()
+       guard var vcArrays = viewControllers() as [UIViewController!];
+       guard var dictArrays = tabBarItemsAttributesForController() as [Dictionary!]
+		
+        let tabBarController = CYLTabBarController!.init(viewControllers: vcArrays, tabBarItemsAttributes: dictArrays)
+//        customizeTabBarAppearance()
         return tabBarController
     }
-    
     
     //Mark: 视图控制器数组
     func viewControllers() -> NSArray {
