@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181943351DE56E5C0092CF1A /* CYLPlusButtonSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181943341DE56E5C0092CF1A /* CYLPlusButtonSubclass.swift */; };
+		181943381DE5829A0092CF1A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181943371DE5829A0092CF1A /* BaseViewController.swift */; };
+		1819433A1DE58FB40092CF1A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181943391DE58FB40092CF1A /* LoginViewController.swift */; };
 		181F6A1E1DC03C0C003FEDA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F6A1D1DC03C0C003FEDA9 /* AppDelegate.swift */; };
 		181F6A201DC03C0C003FEDA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F6A1F1DC03C0C003FEDA9 /* ViewController.swift */; };
 		181F6A231DC03C0C003FEDA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181F6A211DC03C0C003FEDA9 /* Main.storyboard */; };
@@ -201,6 +204,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181943341DE56E5C0092CF1A /* CYLPlusButtonSubclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYLPlusButtonSubclass.swift; sourceTree = "<group>"; };
+		181943371DE5829A0092CF1A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		181943391DE58FB40092CF1A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		181F6A1A1DC03C0C003FEDA9 /* ZhouDaoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhouDaoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181F6A1D1DC03C0C003FEDA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		181F6A1F1DC03C0C003FEDA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -414,6 +420,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181943361DE57FD20092CF1A /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				181943371DE5829A0092CF1A /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
 		181F6A111DC03C0C003FEDA9 = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +516,7 @@
 		181F6A521DC05A73003FEDA9 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				181943361DE57FD20092CF1A /* BaseViewController */,
 				188622DB1DC1EA4200F4BAF8 /* TabbarView */,
 				181F6A531DC05ABB003FEDA9 /* DefineHeader */,
 			);
@@ -824,6 +839,7 @@
 			children = (
 				188622DC1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift */,
 				185D3B341DC2DEFA000E77C6 /* CYLBaseNavigationController.swift */,
+				181943341DE56E5C0092CF1A /* CYLPlusButtonSubclass.swift */,
 			);
 			path = TabbarView;
 			sourceTree = "<group>";
@@ -945,6 +961,7 @@
 			isa = PBXGroup;
 			children = (
 				188622F41DC1ED4D00F4BAF8 /* MeViewController.swift */,
+				181943391DE58FB40092CF1A /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1039,7 +1056,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = CQZ;
 				TargetAttributes = {
 					181F6A191DC03C0C003FEDA9 = {
@@ -1318,6 +1335,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1819433A1DE58FB40092CF1A /* LoginViewController.swift in Sources */,
+				181943381DE5829A0092CF1A /* BaseViewController.swift in Sources */,
 				188622F51DC1ED4D00F4BAF8 /* MeViewController.swift in Sources */,
 				181F6A201DC03C0C003FEDA9 /* ViewController.swift in Sources */,
 				188622F11DC1ED1A00F4BAF8 /* RecomViewController.swift in Sources */,
@@ -1328,6 +1347,7 @@
 				188622F31DC1ED3800F4BAF8 /* ToolsViewController.swift in Sources */,
 				181F6A1E1DC03C0C003FEDA9 /* AppDelegate.swift in Sources */,
 				188622DD1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift in Sources */,
+				181943351DE56E5C0092CF1A /* CYLPlusButtonSubclass.swift in Sources */,
 				188622EF1DC1ED0500F4BAF8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1401,6 +1421,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1423,7 +1444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1450,6 +1471,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1466,7 +1488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1478,6 +1500,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FDC9F2DB1F40E62E56FB6A1F /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = DX33K55M2K;
@@ -1496,6 +1519,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 408EC40FCDFAB6F4A597A9DF /* Pods.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = DX33K55M2K;

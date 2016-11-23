@@ -8,13 +8,20 @@
 
 import UIKit
 
-class RecomViewController: UIViewController {
+class RecomViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        initUI()
     }
+    //MARK: Methods
+    func initUI() -> Void {
+        
+        self.setupNaviBarWithTitle(title: "推荐")
+    }
+    
+    //MARK: setters and getters
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -8,13 +8,20 @@
 
 import UIKit
 
-class MeViewController: UIViewController {
+class MeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        initUI()
     }
+    //MARK: Methods
+    func initUI() -> Void {
+        
+        self.setupNaviBarWithTitle(title: "我的")
+    }
+    
+    //MARK: setters and getters
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

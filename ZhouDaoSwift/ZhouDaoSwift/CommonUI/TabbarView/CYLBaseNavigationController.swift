@@ -16,7 +16,9 @@ class CYLBaseNavigationController: UINavigationController {
         //self.isNavigationBarHidden = true
         super.pushViewController(viewController, animated: animated)
         
-        if self.viewControllers.count > 0 {
+//        print("数量: \(self.viewControllers.count)")
+        
+        if self.viewControllers.count > 1 {
             
             viewController.hidesBottomBarWhenPushed = true
         }

@@ -16,23 +16,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UITabBarControllerDelegat
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-//        self.window = UIWindow.init(frame: UIScreen.main.bounds)
-//        self.window?.backgroundColor = UIColor.white
-//        
-//        let tabBarControllerConfig = ZDLTabBarControllerConfig()
-//       // tabBarControllerConfig.tabBarController.delegate = self
-//        self.window?.rootViewController = tabBarControllerConfig.tabBarController
-//        self.window?.makeKeyAndVisible()
+        self.window = UIWindow.init(frame: UIScreen.main.bounds)
+        self.window?.backgroundColor = UIColor.white
+        UINavigationBar.appearance().barTintColor = RGB(r: 0, 200, 170)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        application.statusBarStyle = UIStatusBarStyle.lightContent
+
         
+        CYLPlusButtonSubclass.register()
+        let tabBarControllerConfig = ZDLTabBarControllerConfig()
+        let tabBarVC: CYLTabBarController = tabBarControllerConfig.tabBarController
         
+        tabBarVC.delegate = self
+        self.window?.rootViewController = tabBarVC
+        self.window?.makeKeyAndVisible()
+
         return true
     }
     //MARK: UITabBarControllerDelegate
-    
-    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         
-        return true
+        print("\(viewController.tabBarItem.title)")
+        if viewController.tabBarItem.title == "我的" {
+            
+            let loginVC = LoginViewController()
+            let nav = UINavigationController(rootViewController: loginVC)
+            
+            tabBarController.present(nav, animated: true, completion: {
+                
+            })
+        }
     }
+
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
