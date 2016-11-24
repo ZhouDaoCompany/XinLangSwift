@@ -183,6 +183,8 @@
 		188622F11DC1ED1A00F4BAF8 /* RecomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622F01DC1ED1A00F4BAF8 /* RecomViewController.swift */; };
 		188622F31DC1ED3800F4BAF8 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622F21DC1ED3800F4BAF8 /* ToolsViewController.swift */; };
 		188622F51DC1ED4D00F4BAF8 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622F41DC1ED4D00F4BAF8 /* MeViewController.swift */; };
+		1887F0E81DE6C16A00CA5A4C /* ZDNetWorkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887F0E71DE6C16A00CA5A4C /* ZDNetWorkManger.swift */; };
+		1887F0EB1DE6C7B600CA5A4C /* ZhouDao_RequestDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887F0EA1DE6C7B600CA5A4C /* ZhouDao_RequestDefine.swift */; };
 		4C9A3FD9BA8E01C24C3A4642 /* Pods_ZhouDaoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3315EE052843997D748EEF /* Pods_ZhouDaoSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -389,6 +391,8 @@
 		188622F01DC1ED1A00F4BAF8 /* RecomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomViewController.swift; sourceTree = "<group>"; };
 		188622F21DC1ED3800F4BAF8 /* ToolsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
 		188622F41DC1ED4D00F4BAF8 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		1887F0E71DE6C16A00CA5A4C /* ZDNetWorkManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDNetWorkManger.swift; sourceTree = "<group>"; };
+		1887F0EA1DE6C7B600CA5A4C /* ZhouDao_RequestDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZhouDao_RequestDefine.swift; sourceTree = "<group>"; };
 		338744BA6C81A971B84483D8 /* Pods-ZhouDaoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhouDaoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhouDaoSwift/Pods-ZhouDaoSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		3BBABFC3E6423CF5C5BC96D5 /* Pods-ZhouDaoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhouDaoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhouDaoSwift/Pods-ZhouDaoSwift.release.xcconfig"; sourceTree = "<group>"; };
 		45B6A8451DCC0F403657DF1C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -458,6 +462,7 @@
 			children = (
 				181F6A1D1DC03C0C003FEDA9 /* AppDelegate.swift */,
 				181F6A1F1DC03C0C003FEDA9 /* ViewController.swift */,
+				1887F0E61DE6C13200CA5A4C /* NetWorkManger */,
 				181F6A511DC05A73003FEDA9 /* Classes */,
 				181F6A521DC05A73003FEDA9 /* CommonUI */,
 				181F6A4D1DC05A08003FEDA9 /* Resources */,
@@ -976,6 +981,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		1887F0E61DE6C13200CA5A4C /* NetWorkManger */ = {
+			isa = PBXGroup;
+			children = (
+				1887F0E71DE6C16A00CA5A4C /* ZDNetWorkManger.swift */,
+				1887F0EA1DE6C7B600CA5A4C /* ZhouDao_RequestDefine.swift */,
+			);
+			path = NetWorkManger;
+			sourceTree = "<group>";
+		};
 		1AE7393B7C3CF622900439B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1344,8 +1358,10 @@
 				1819433A1DE58FB40092CF1A /* LoginViewController.swift in Sources */,
 				181943381DE5829A0092CF1A /* BaseViewController.swift in Sources */,
 				188622F51DC1ED4D00F4BAF8 /* MeViewController.swift in Sources */,
+				1887F0EB1DE6C7B600CA5A4C /* ZhouDao_RequestDefine.swift in Sources */,
 				181F6A201DC03C0C003FEDA9 /* ViewController.swift in Sources */,
 				188622F11DC1ED1A00F4BAF8 /* RecomViewController.swift in Sources */,
+				1887F0E81DE6C16A00CA5A4C /* ZDNetWorkManger.swift in Sources */,
 				181F6A551DC05AD1003FEDA9 /* DefineHeader.swift in Sources */,
 				18526E2E1DC2EA7A003DF559 /* UIColor+Helper.m in Sources */,
 				181F6A5A1DC05C21003FEDA9 /* JX_GCDTimerManager.m in Sources */,
@@ -1506,7 +1522,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 338744BA6C81A971B84483D8 /* Pods-ZhouDaoSwift.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = DX33K55M2K;
@@ -1517,7 +1533,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = ZhouDaoSwift/CommonUI/DefineHeader/ZhouDaoSwift_bridging.h;
 				SWIFT_VERSION = 3.0;
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/** $(inherited)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -1525,7 +1541,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3BBABFC3E6423CF5C5BC96D5 /* Pods-ZhouDaoSwift.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = DX33K55M2K;
@@ -1536,7 +1552,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = ZhouDaoSwift/CommonUI/DefineHeader/ZhouDaoSwift_bridging.h;
 				SWIFT_VERSION = 3.0;
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/** $(inherited)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};

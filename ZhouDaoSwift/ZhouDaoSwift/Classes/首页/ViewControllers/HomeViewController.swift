@@ -20,9 +20,25 @@ class HomeViewController: BaseViewController {
     func initUI() -> Void {
         
         self.setupNaviBarWithTitle(title: "首页")
+        self.view.addSubview(self.webView)
+        
+        ZDNetWorkManger.getWithUrl("api_recom.php?key=16248ef5&c=indexAll", params: [:], success: { (response) in
+            
+            
+        }) { (error) in
+            
+        }
     }
     
     //MARK: setters and getters
+    private var webView : UIWebView {
+        
+        let web = UIWebView(frame: CGRect(x: CGFloat(0.0), y: CGFloat(64.0), width: ScreenWidth, height: ScreenHeight - 64))
+        web.backgroundColor = UIColor.clear
+        let request = NSURLRequest(url: URL(string: "https://www.baidu.com")!)
+        web.loadRequest(request as URLRequest)
+        return web
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.2.0)
   - CYLTabBarController (1.6.7)
   - IQKeyboardManagerSwift (4.0.7)
+  - NVActivityIndicatorView (3.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -11,6 +12,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.2.0)
   - CYLTabBarController (~> 1.6.7)
   - IQKeyboardManagerSwift (~> 4.0.7)
+  - NVActivityIndicatorView (~> 3.0)
   - SDWebImage (~> 3.8.2)
   - SwiftyJSON (~> 3.1.3)
 
@@ -18,9 +20,10 @@ SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   CYLTabBarController: cc8b19463bd3a3d4b886a55c0a9440fdceefd3d6
   IQKeyboardManagerSwift: 58bbcf46b5cf9fd4ed625d28a60cb2fbae4ab0f4
+  NVActivityIndicatorView: 81953b5e65093ba79edf4fe7268e002039ca5268
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
 
-PODFILE CHECKSUM: 7c6dbc91f92bc07d88a9f36fb12b46ba9c994e14
+PODFILE CHECKSUM: 98fa6bf56340576dcdc7da3abf0d155daeee6d22
 
 COCOAPODS: 1.1.1
