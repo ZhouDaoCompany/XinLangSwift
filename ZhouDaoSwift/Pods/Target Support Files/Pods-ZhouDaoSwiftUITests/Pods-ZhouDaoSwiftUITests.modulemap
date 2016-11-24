@@ -1,6 +1,0 @@
-framework module Pods_ZhouDaoSwiftUITests {
-  umbrella header "Pods-ZhouDaoSwiftUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

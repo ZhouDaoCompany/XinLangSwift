@@ -183,7 +183,7 @@
 		188622F11DC1ED1A00F4BAF8 /* RecomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622F01DC1ED1A00F4BAF8 /* RecomViewController.swift */; };
 		188622F31DC1ED3800F4BAF8 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622F21DC1ED3800F4BAF8 /* ToolsViewController.swift */; };
 		188622F51DC1ED4D00F4BAF8 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622F41DC1ED4D00F4BAF8 /* MeViewController.swift */; };
-		C0004DCE1B5313526BDBDD1F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B6A8451DCC0F403657DF1C /* Pods.framework */; };
+		4C9A3FD9BA8E01C24C3A4642 /* Pods_ZhouDaoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3315EE052843997D748EEF /* Pods_ZhouDaoSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -389,9 +389,12 @@
 		188622F01DC1ED1A00F4BAF8 /* RecomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomViewController.swift; sourceTree = "<group>"; };
 		188622F21DC1ED3800F4BAF8 /* ToolsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
 		188622F41DC1ED4D00F4BAF8 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
-		408EC40FCDFAB6F4A597A9DF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		338744BA6C81A971B84483D8 /* Pods-ZhouDaoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhouDaoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhouDaoSwift/Pods-ZhouDaoSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		3BBABFC3E6423CF5C5BC96D5 /* Pods-ZhouDaoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhouDaoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhouDaoSwift/Pods-ZhouDaoSwift.release.xcconfig"; sourceTree = "<group>"; };
 		45B6A8451DCC0F403657DF1C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDC9F2DB1F40E62E56FB6A1F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4D3315EE052843997D748EEF /* Pods_ZhouDaoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZhouDaoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEF83BE68C44351025ACAAF3 /* Pods_ZhouDaoSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZhouDaoSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFE60C4BA3401658BBE5C08 /* Pods_ZhouDaoSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZhouDaoSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,7 +402,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0004DCE1B5313526BDBDD1F /* Pods.framework in Frameworks */,
+				4C9A3FD9BA8E01C24C3A4642 /* Pods_ZhouDaoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,8 +438,8 @@
 				181F6A311DC03C0C003FEDA9 /* ZhouDaoSwiftTests */,
 				181F6A3C1DC03C0C003FEDA9 /* ZhouDaoSwiftUITests */,
 				181F6A1B1DC03C0C003FEDA9 /* Products */,
-				BDBE235B26B3C099068727AD /* Pods */,
 				1AE7393B7C3CF622900439B6 /* Frameworks */,
+				863D74FF9001E7473BA810EE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -977,15 +980,18 @@
 			isa = PBXGroup;
 			children = (
 				45B6A8451DCC0F403657DF1C /* Pods.framework */,
+				4D3315EE052843997D748EEF /* Pods_ZhouDaoSwift.framework */,
+				AEF83BE68C44351025ACAAF3 /* Pods_ZhouDaoSwiftTests.framework */,
+				EAFE60C4BA3401658BBE5C08 /* Pods_ZhouDaoSwiftUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BDBE235B26B3C099068727AD /* Pods */ = {
+		863D74FF9001E7473BA810EE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FDC9F2DB1F40E62E56FB6A1F /* Pods.debug.xcconfig */,
-				408EC40FCDFAB6F4A597A9DF /* Pods.release.xcconfig */,
+				338744BA6C81A971B84483D8 /* Pods-ZhouDaoSwift.debug.xcconfig */,
+				3BBABFC3E6423CF5C5BC96D5 /* Pods-ZhouDaoSwift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -997,12 +1003,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 181F6A421DC03C0C003FEDA9 /* Build configuration list for PBXNativeTarget "ZhouDaoSwift" */;
 			buildPhases = (
-				2F934465A7756B04D1569E8F /* Check Pods Manifest.lock */,
+				1F96DFC3349D7E2D6F591938 /* [CP] Check Pods Manifest.lock */,
 				181F6A161DC03C0C003FEDA9 /* Sources */,
 				181F6A171DC03C0C003FEDA9 /* Frameworks */,
 				181F6A181DC03C0C003FEDA9 /* Resources */,
-				F5DF7859B851E788617EC50D /* Embed Pods Frameworks */,
-				C96BC8B51D2EDC51CB451A5B /* Copy Pods Resources */,
+				B4DAB267F0EBCEB4FBC2C87C /* [CP] Embed Pods Frameworks */,
+				AC7E24C8B06686F635C27D07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1283,49 +1289,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2F934465A7756B04D1569E8F /* Check Pods Manifest.lock */ = {
+		1F96DFC3349D7E2D6F591938 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C96BC8B51D2EDC51CB451A5B /* Copy Pods Resources */ = {
+		AC7E24C8B06686F635C27D07 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhouDaoSwift/Pods-ZhouDaoSwift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F5DF7859B851E788617EC50D /* Embed Pods Frameworks */ = {
+		B4DAB267F0EBCEB4FBC2C87C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhouDaoSwift/Pods-ZhouDaoSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1498,9 +1504,9 @@
 		};
 		181F6A431DC03C0C003FEDA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDC9F2DB1F40E62E56FB6A1F /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 338744BA6C81A971B84483D8 /* Pods-ZhouDaoSwift.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = DX33K55M2K;
@@ -1511,15 +1517,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = ZhouDaoSwift/CommonUI/DefineHeader/ZhouDaoSwift_bridging.h;
 				SWIFT_VERSION = 3.0;
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/** $(inherited)";
 			};
 			name = Debug;
 		};
 		181F6A441DC03C0C003FEDA9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 408EC40FCDFAB6F4A597A9DF /* Pods.release.xcconfig */;
+			baseConfigurationReference = 3BBABFC3E6423CF5C5BC96D5 /* Pods-ZhouDaoSwift.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = DX33K55M2K;
@@ -1530,7 +1536,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = ZhouDaoSwift/CommonUI/DefineHeader/ZhouDaoSwift_bridging.h;
 				SWIFT_VERSION = 3.0;
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/** $(inherited)";
 			};
 			name = Release;
 		};

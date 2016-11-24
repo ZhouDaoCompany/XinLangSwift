@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AFNetworking.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,22 +24,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ZhouDaoSwiftTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-ZhouDaoSwiftUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,42 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1520003FEBEC114D6C84F832AFEDB994</key>
+		<key>4DC059E04CBA98AEDDB5C34E02D551E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
+		<key>55B2259034BE138B0952E90944E7B1DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1D58C298DB66A33E4274005750837D73</key>
+		<key>58FE0486E83AA749B9E8C1300B64E2A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>50C01ECC81F7F653511699DE28AF325B</key>
+		<key>7D4561FCA81FA4DE8709E7B84A09AA3C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>56619FE12EA4FE789CF79514CE349545</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A6AC3C77DAD9634E1870EFF0899FACD6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C5270037EC5CDF389D94CCEDB4413E13</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C9E61EF0FEBCFCB35950FB64987FB461</key>
+		<key>8A0D92C4ED230F8787C9EF7EB7FBF9CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
