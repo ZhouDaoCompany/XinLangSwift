@@ -19,9 +19,19 @@ class ToolsViewController: BaseViewController {
     func initUI() -> Void {
         
         self.setupNaviBarWithTitle(title: "工具")
+        self.view.addSubview(self.webView)
+
     }
     
     //MARK: setters and getters
+    private var webView : UIWebView {
+        
+        let web = UIWebView(frame: CGRect(x: CGFloat(0.0), y: CGFloat(64.0), width: ScreenWidth, height: ScreenHeight - 114))
+        web.backgroundColor = UIColor.clear
+        let request = NSURLRequest(url: URL(string: "https://www.baidu.com")!)
+        web.loadRequest(request as URLRequest)
+        return web
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

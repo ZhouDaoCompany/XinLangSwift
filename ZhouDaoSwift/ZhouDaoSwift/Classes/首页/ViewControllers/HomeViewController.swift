@@ -8,8 +8,14 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController {
+let CELLIDENTIFER = "HomeViewCellIDentifer"
 
+class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var dataSourceArrays : [Any] = []
+    var tableView : UITableView!
+    
+ 
     //MARK: life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,25 +26,76 @@ class HomeViewController: BaseViewController {
     func initUI() -> Void {
         
         self.setupNaviBarWithTitle(title: "首页")
-        self.view.addSubview(self.webView)
+
+//        self.view.addSubview(self.tableView)
         
-        ZDNetWorkManger.getWithUrl("api_recom.php?key=16248ef5&c=indexAll", params: [:], success: { (response) in
+        let rect = CGRect(x: CGFloat(0.0), y: CGFloat(64.0), width: ScreenWidth, height: ScreenHeight - 114)
+        tableView = UITableView(frame: rect, style: UITableViewStyle.plain)
+        tableView.backgroundColor = UIColor.clear
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib.init(nibName: "HomeViewCell", bundle: nil), forCellReuseIdentifier: CELLIDENTIFER)
+        self.view.addSubview(tableView)
+
+        loadData()
+    }
+    //MARK: 数据请求
+    func loadData() -> Void {
+        
+        ZDNetWorkManger.getWithUrl("api_recom.php?key=16248ef5&c=indexAll", params: [:], success: { [weak self] (response) in
             
-            
-        }) { (error) in
-            
-        }
+            let twoArrays = response["data"][1]["data"].array
+            twoArrays?.forEach({ (dict) in
+                
+                let model = HomeModel.init(json : dict)
+                self?.dataSourceArrays.append(model)
+            })
+            self?.tableView.reloadData()
+
+        }) { (error) in }
+
     }
     
-    //MARK: setters and getters
-    private var webView : UIWebView {
+    //MARK: UITableViewDataSource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        let web = UIWebView(frame: CGRect(x: CGFloat(0.0), y: CGFloat(64.0), width: ScreenWidth, height: ScreenHeight - 64))
-        web.backgroundColor = UIColor.clear
-        let request = NSURLRequest(url: URL(string: "https://www.baidu.com")!)
-        web.loadRequest(request as URLRequest)
-        return web
+        return self.dataSourceArrays.count
     }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell : HomeViewCell = tableView.dequeueReusableCell(withIdentifier: CELLIDENTIFER) as! HomeViewCell
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        if self.dataSourceArrays.count > 0 {
+            
+            let model = self.dataSourceArrays[indexPath.row] as! HomeModel
+            cell.setUIHomeModel(model)
+        }
+        
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return CGFloat(95)
+    }
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return CGFloat(0.1)
+//    }
+//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+//        return CGFloat(0.1)
+//    }
+    
+    //MARK: setters and getters
+//    private var tableView: UITableView {
+//        
+//        let rect = CGRect(x: CGFloat(0.0), y: CGFloat(64.0), width: ScreenWidth, height: ScreenHeight - 114)
+//        let tableView = UITableView(frame: rect, style: UITableViewStyle.grouped)
+//        tableView.backgroundColor = UIColor.clear
+//        tableView.tableFooterView = UIView(frame: CGRect.zero)
+//        tableView.delegate = self
+//        tableView.dataSource = self
+//        return tableView
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

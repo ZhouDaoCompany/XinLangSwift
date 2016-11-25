@@ -178,6 +178,9 @@
 		186F24E21DC893CC00070169 /* pc_gongshang@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F24451DC893CC00070169 /* pc_gongshang@2x.png */; };
 		186F24E31DC893CC00070169 /* pc_jiaotong@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F24461DC893CC00070169 /* pc_jiaotong@2x.png */; };
 		186F24E41DC893CC00070169 /* pc_yiliao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F24471DC893CC00070169 /* pc_yiliao@2x.png */; };
+		18747CA21DE80452003D0AF1 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18747CA11DE80452003D0AF1 /* HomeModel.swift */; };
+		18747CA51DE827FC003D0AF1 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18747CA31DE827FC003D0AF1 /* HomeViewCell.swift */; };
+		18747CA61DE827FC003D0AF1 /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18747CA41DE827FC003D0AF1 /* HomeViewCell.xib */; };
 		188622DD1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622DC1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift */; };
 		188622EF1DC1ED0500F4BAF8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622EE1DC1ED0500F4BAF8 /* HomeViewController.swift */; };
 		188622F11DC1ED1A00F4BAF8 /* RecomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622F01DC1ED1A00F4BAF8 /* RecomViewController.swift */; };
@@ -386,6 +389,9 @@
 		186F24451DC893CC00070169 /* pc_gongshang@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pc_gongshang@2x.png"; sourceTree = "<group>"; };
 		186F24461DC893CC00070169 /* pc_jiaotong@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pc_jiaotong@2x.png"; sourceTree = "<group>"; };
 		186F24471DC893CC00070169 /* pc_yiliao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pc_yiliao@2x.png"; sourceTree = "<group>"; };
+		18747CA11DE80452003D0AF1 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeModel.swift; path = ZhouDaoSwift/NetWorkManger/HomeModel.swift; sourceTree = SOURCE_ROOT; };
+		18747CA31DE827FC003D0AF1 /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewCell.swift; path = ZhouDaoSwift/NetWorkManger/HomeViewCell.swift; sourceTree = SOURCE_ROOT; };
+		18747CA41DE827FC003D0AF1 /* HomeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewCell.xib; path = ZhouDaoSwift/NetWorkManger/HomeViewCell.xib; sourceTree = SOURCE_ROOT; };
 		188622DC1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLTabBarControllerConfig.swift; sourceTree = "<group>"; };
 		188622EE1DC1ED0500F4BAF8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		188622F01DC1ED1A00F4BAF8 /* RecomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomViewController.swift; sourceTree = "<group>"; };
@@ -897,6 +903,7 @@
 		188622E31DC1ECC400F4BAF8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18747CA11DE80452003D0AF1 /* HomeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -912,6 +919,8 @@
 		188622E51DC1ECC400F4BAF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				18747CA31DE827FC003D0AF1 /* HomeViewCell.swift */,
+				18747CA41DE827FC003D0AF1 /* HomeViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1132,6 +1141,7 @@
 				186F249C1DC893CC00070169 /* mine_noScer@2x.png in Resources */,
 				186F24E31DC893CC00070169 /* pc_jiaotong@2x.png in Resources */,
 				186F24C01DC893CC00070169 /* case_alerticon@2x.png in Resources */,
+				18747CA61DE827FC003D0AF1 /* HomeViewCell.xib in Resources */,
 				186F24DE1DC893CC00070169 /* Esearch_dateSelect@2x.png in Resources */,
 				186F24DF1DC893CC00070169 /* Esearch_graySousuo@2x.png in Resources */,
 				186F24DB1DC893CC00070169 /* case_word@2x.png in Resources */,
@@ -1364,6 +1374,7 @@
 				1887F0E81DE6C16A00CA5A4C /* ZDNetWorkManger.swift in Sources */,
 				181F6A551DC05AD1003FEDA9 /* DefineHeader.swift in Sources */,
 				18526E2E1DC2EA7A003DF559 /* UIColor+Helper.m in Sources */,
+				18747CA21DE80452003D0AF1 /* HomeModel.swift in Sources */,
 				181F6A5A1DC05C21003FEDA9 /* JX_GCDTimerManager.m in Sources */,
 				185D3B351DC2DEFA000E77C6 /* CYLBaseNavigationController.swift in Sources */,
 				188622F31DC1ED3800F4BAF8 /* ToolsViewController.swift in Sources */,
@@ -1371,6 +1382,7 @@
 				188622DD1DC1EA6500F4BAF8 /* ZDLTabBarControllerConfig.swift in Sources */,
 				181943351DE56E5C0092CF1A /* CYLPlusButtonSubclass.swift in Sources */,
 				188622EF1DC1ED0500F4BAF8 /* HomeViewController.swift in Sources */,
+				18747CA51DE827FC003D0AF1 /* HomeViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

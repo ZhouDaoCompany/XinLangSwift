@@ -13,7 +13,7 @@ import Alamofire
 import SwiftyJSON
 
 
-typealias ZDResponseSuccess = (_ response: Any) ->Void
+typealias ZDResponseSuccess = (_ response: JSON) ->Void
 typealias ZDResponseFail    =  (_ error: Error) ->Void
 
 class ZDNetWorkManger: NSObject {
@@ -38,7 +38,7 @@ class ZDNetWorkManger: NSObject {
             case .success(let value):
                 
                 let json = JSON(value)
-                print("get请求成功: \(json)")
+//                print("get请求成功: \(json)")
                 success(json)
                 break
                 
