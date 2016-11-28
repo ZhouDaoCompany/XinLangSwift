@@ -12,7 +12,8 @@
 
 #endif /* ZhouDaoSwift_bridging_h */
 
-#import "SDWebImage/UIImageView+WebCache.h"
+//#import "SDWebImage/UIImageView+WebCache.h"
 #import "JX_GCDTimerManager.h"
 #import "CYLTabBarController.h"
 #import "UIColor+Helper.h"
+#import "JSAnimatedImagesView.h"

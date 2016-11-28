@@ -10,24 +10,39 @@ import UIKit
 
 let CELLIDENTIFER = "HomeViewCellIDentifer"
 
-class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource,JSAnimatedImagesViewDataSource {
     
     var dataSourceArrays : [Any] = []
     var tableView : UITableView!
+    var animatedImgiew : JSAnimatedImagesView!
     
  
     //MARK: life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        startTheFigureAmplification()
         initUI()
     }
-    //MARK: Methods
+    // MARK: 启动图放大
+    func startTheFigureAmplification() {
+        
+        let window = UIApplication.shared.keyWindow!
+        animatedImgiew = JSAnimatedImagesView()
+        animatedImgiew.frame = CGRect(x: CGFloat(0.0), y: CGFloat(0.0), width: ScreenWidth, height: ScreenHeight)
+        animatedImgiew.dataSource = self
+        window.addSubview(self.animatedImgiew)
+        
+        GCD_Delay(seconds: 3.0, completion: { [weak self] in
+            
+            self?.animatedImgiew.removeFromSuperview()
+        })
+        
+    }
+    // MARK: Methods
     func initUI() -> Void {
         
         self.setupNaviBarWithTitle(title: "首页")
-
-//        self.view.addSubview(self.tableView)
         
         let rect = CGRect(x: CGFloat(0.0), y: CGFloat(64.0), width: ScreenWidth, height: ScreenHeight - 114)
         tableView = UITableView(frame: rect, style: UITableViewStyle.plain)
@@ -40,7 +55,7 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
 
         loadData()
     }
-    //MARK: 数据请求
+    // MARK: 数据请求
     func loadData() -> Void {
         
         ZDNetWorkManger.getWithUrl("api_recom.php?key=16248ef5&c=indexAll", params: [:], success: { [weak self] (response) in
@@ -57,7 +72,7 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
 
     }
     
-    //MARK: UITableViewDataSource
+    // MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return self.dataSourceArrays.count
@@ -78,12 +93,21 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         
         return CGFloat(95)
     }
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return CGFloat(0.1)
-//    }
-//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        return CGFloat(0.1)
-//    }
+    // MARK: JSAnimatedImagesViewDataSource
+    func animatedImagesNumber(ofImages animatedImagesView: JSAnimatedImagesView!) -> UInt {
+        
+        return 2
+    }
+    func animatedImagesView(_ animatedImagesView: JSAnimatedImagesView!, imageAt index: UInt) -> UIImage! {
+        
+        let imageDictionary: Dictionary = ["320":"LaunchImage-700-568h","375":"LaunchImage-800-667h","414":"LaunchImage-800-Portrait-736h"]
+        let keyString = String(format: "%.0f", ScreenWidth)
+        var imgName = imageDictionary[keyString]
+        if (imgName?.isEmpty)! {
+            imgName = "LaunchImage-700"
+        }
+        return UIImage(named: imgName!)
+    }
     
     //MARK: setters and getters
 //    private var tableView: UITableView {

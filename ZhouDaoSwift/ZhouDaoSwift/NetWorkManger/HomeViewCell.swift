@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeViewCell: UITableViewCell {
 
@@ -19,15 +20,20 @@ class HomeViewCell: UITableViewCell {
         // Initialization code
         
         self.selectionStyle = .none
-        
     }
     func setUIHomeModel(_ model : HomeModel) {
         
-        let url = NSURL(string: model.pic)
-        self.headImgView?.sd_setImage(with: url as URL!, placeholderImage: UIImage(named: "home_palcehold"))
+        let url = URL(string: model.pic)!
+        self.headImgView.kf.setImage(with: url,
+                                              placeholder: UIImage(named: "home_palcehold"),
+                                              options: [.transition(ImageTransition.fade(1))],
+                                              progressBlock: { receivedSize, totalSize in
+                                                
+        },
+                                              completionHandler: { image, error, cacheType, imageURL in
+        })
         self.titleLab.text = model.title
         self.contentLab.text = model.content
-
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
