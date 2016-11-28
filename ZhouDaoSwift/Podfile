@@ -7,14 +7,14 @@ use_frameworks!
 target 'ZhouDaoSwift' do
 
 #Objective-C
-#pod 'SDWebImage', '~> 3.8.2'
 pod 'CYLTabBarController', '~> 1.6.7'
 pod 'FDFullscreenPopGesture', '~> 1.1'
-#pod 'SDCycleScrollView', '~> 1.65'
 pod 'JSAnimatedImagesView', '~> 1.0.0'
 #pod 'QiniuUpload', '~> 2.0.2'
 #pod 'MBProgressHUD', '~> 1.0.0'
 #pod 'pop', '~> 1.0.9'
+#pod 'SDCycleScrollView', '~> 1.65'
+#pod 'SDWebImage', '~> 3.8.2'
 
 #Swift
 #键盘

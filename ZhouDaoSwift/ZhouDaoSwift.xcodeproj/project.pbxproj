@@ -188,6 +188,7 @@
 		188622F51DC1ED4D00F4BAF8 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188622F41DC1ED4D00F4BAF8 /* MeViewController.swift */; };
 		1887F0E81DE6C16A00CA5A4C /* ZDNetWorkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887F0E71DE6C16A00CA5A4C /* ZDNetWorkManger.swift */; };
 		1887F0EB1DE6C7B600CA5A4C /* ZhouDao_RequestDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887F0EA1DE6C7B600CA5A4C /* ZhouDao_RequestDefine.swift */; };
+		18BFF2E41DEC18BB0015411F /* ZDCircleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFF2E31DEC18BB0015411F /* ZDCircleScrollView.swift */; };
 		4C9A3FD9BA8E01C24C3A4642 /* Pods_ZhouDaoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3315EE052843997D748EEF /* Pods_ZhouDaoSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -399,6 +400,7 @@
 		188622F41DC1ED4D00F4BAF8 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		1887F0E71DE6C16A00CA5A4C /* ZDNetWorkManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDNetWorkManger.swift; sourceTree = "<group>"; };
 		1887F0EA1DE6C7B600CA5A4C /* ZhouDao_RequestDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZhouDao_RequestDefine.swift; sourceTree = "<group>"; };
+		18BFF2E31DEC18BB0015411F /* ZDCircleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDCircleScrollView.swift; sourceTree = "<group>"; };
 		338744BA6C81A971B84483D8 /* Pods-ZhouDaoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhouDaoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhouDaoSwift/Pods-ZhouDaoSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		3BBABFC3E6423CF5C5BC96D5 /* Pods-ZhouDaoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhouDaoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhouDaoSwift/Pods-ZhouDaoSwift.release.xcconfig"; sourceTree = "<group>"; };
 		45B6A8451DCC0F403657DF1C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -511,6 +513,7 @@
 		181F6A4F1DC05A08003FEDA9 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				18BFF2E21DEC14D70015411F /* ZDCircleScrollView */,
 				181F6A571DC05C21003FEDA9 /* JX_GCDTimer */,
 			);
 			path = Utility;
@@ -999,6 +1002,14 @@
 			path = NetWorkManger;
 			sourceTree = "<group>";
 		};
+		18BFF2E21DEC14D70015411F /* ZDCircleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				18BFF2E31DEC18BB0015411F /* ZDCircleScrollView.swift */,
+			);
+			path = ZDCircleScrollView;
+			sourceTree = "<group>";
+		};
 		1AE7393B7C3CF622900439B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1373,6 +1384,7 @@
 				188622F11DC1ED1A00F4BAF8 /* RecomViewController.swift in Sources */,
 				1887F0E81DE6C16A00CA5A4C /* ZDNetWorkManger.swift in Sources */,
 				181F6A551DC05AD1003FEDA9 /* DefineHeader.swift in Sources */,
+				18BFF2E41DEC18BB0015411F /* ZDCircleScrollView.swift in Sources */,
 				18526E2E1DC2EA7A003DF559 /* UIColor+Helper.m in Sources */,
 				18747CA21DE80452003D0AF1 /* HomeModel.swift in Sources */,
 				181F6A5A1DC05C21003FEDA9 /* JX_GCDTimerManager.m in Sources */,
