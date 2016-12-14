@@ -16,6 +16,7 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     var tableView : UITableView!
     var animatedImgiew : JSAnimatedImagesView!
     
+    
  
     //MARK: life cycle
     override func viewDidLoad() {

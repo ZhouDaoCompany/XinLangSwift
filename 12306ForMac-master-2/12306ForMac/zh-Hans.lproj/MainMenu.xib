@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="订票助手" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="订票助手" id="1Xt-HY-uBw" userLabel="12306ForMac">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="订票助手" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="关于订票助手" id="5kV-Vb-QxS" userLabel="About 12306ForMac">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                            <menuItem title="偏好设置…" keyEquivalent="," id="BOF-NM-1cW">
+                                <connections>
+                                    <action selector="openPreferences:" target="-1" id="paS-S4-wdN"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                            <menuItem title="服务" id="NMo-om-nkz">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="服务" systemMenu="services" id="hz9-B4-Xy5"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                            <menuItem title="隐藏订票助手" keyEquivalent="h" id="Olw-nP-bQN" userLabel="隐藏 12306ForMac">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="隐藏其他" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="全部显示" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="退出订票助手" keyEquivalent="q" id="4sb-4s-VLi" userLabel="Quit">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="窗口" id="aUF-d1-5bR">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="窗口" systemMenu="window" id="Td7-aD-5lo">
+                        <items>
+                            <menuItem title="最小化" keyEquivalent="m" id="OY7-WF-poV">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="VwT-WD-YPe"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="缩放" id="R4o-n2-Eq4">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="DIl-cC-cCs"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
+                            <menuItem title="前置全部窗口" id="LE2-aR-0XJ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="DRN-fu-gQh"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="编辑" id="Hsf-I0-CoD">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="编辑" id="IPf-AL-N9z">
+                        <items>
+                            <menuItem title="撤销键入" keyEquivalent="z" id="aIY-sh-rYC">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="2gY-eC-yy4"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="重做" keyEquivalent="Z" id="4XN-MU-CCc">
+                                <connections>
+                                    <action selector="redo:" target="-1" id="N9a-YR-ZtU"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="LDj-rY-rjp"/>
+                            <menuItem title="剪切" keyEquivalent="x" id="A5C-WQ-L4T">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="y8j-xF-3G9"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="拷贝" keyEquivalent="c" id="bHp-uT-yG7">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="lXh-zD-zDg"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="粘贴" keyEquivalent="v" id="d77-JF-juU">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="dF9-1z-Zm0"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="删除" id="JGR-WR-c7t">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="delete:" target="-1" id="nv3-hg-mlk"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="全选" keyEquivalent="a" id="etH-ld-311">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="FJs-qP-488"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="调试" id="y5H-wR-1j9">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="调试" id="JFg-va-igG">
+                        <items>
+                            <menuItem title="打开调试信息" id="3e4-VH-YCS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="openDebugFile:" target="-1" id="PaF-i8-b9Z"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="打开所在位置" id="bVP-Nz-wEq">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="openDebugDirectory:" target="-1" id="5Br-Sl-aPE"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="操作" id="Pc1-zk-zAM">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="操作" id="gYs-60-cgM">
+                        <items>
+                            <menuItem title="刷新" keyEquivalent="r" id="dUM-Nj-mdp">
+                                <connections>
+                                    <action selector="clickQueryTicket:" target="-1" id="3SL-1j-erW"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="筛选" keyEquivalent="f" id="k36-tW-xbE">
+                                <connections>
+                                    <action selector="clickFilterTrain:" target="-1" id="Kwm-Kb-IsZ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="eG2-hD-Zgi"/>
+                            <menuItem title="向右切换Tab" keyEquivalent="" id="dh2-67-kXh">
+                                <connections>
+                                    <action selector="goRightTab:" target="-1" id="R3O-OO-sAN"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="向左切换Tab" keyEquivalent="" id="NnR-of-iDx">
+                                <connections>
+                                    <action selector="goLeftTab:" target="-1" id="Hlu-sA-SLo"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="用户帮助" id="wpr-3q-Mcd">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="用户帮助" systemMenu="help" id="F2S-fz-NVQ">
+                        <items>
+                            <menuItem title="在Store中评分" id="6LP-JQ-3yV">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="rateInAppstore:" target="-1" id="kFp-ZX-j0h"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="联系作者" id="c7j-ak-HCH">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="EmailAuthor:" target="-1" id="cic-8u-Vhl"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="意见反馈" id="BsZ-0h-9o1">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="reportIssue:" target="-1" id="bPX-TE-V9V"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>

@@ -22,6 +22,24 @@ class ViewController: UIViewController {
         
         let testString = "hdhcgbdjcbehuvchwcedqbjbfucegryubwxwnkwqc"
         var testDictionary = Dictionary<Character, Int>()
+        var testDict = Dictionary<String, Any>()
+        
+
+        
+        var imgArrays : [String] = []
+        var arr = Array<Any>()
+        
+        
+        if testDict["imagesUrl"] != nil {
+            
+            var imgUrls  = (testDict["imagesUrl"] as! [Any])
+            
+            if !imgUrls.isEmpty {
+                
+            }
+
+        }
+        
         
         
         testString.characters.forEach { (Character) in

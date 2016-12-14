@@ -101,7 +101,7 @@ class ZDCircleScrollView: UIView, UIScrollViewDelegate {
      *  @param block      block，回调点击
      */
 
-    private func startAdsWithBlock(_ imageArray: Array<Any>, block:@escaping ZDBAdPageCallback) {
+    func startAdsWithBlock(_ imageArray: Array<Any>, block:@escaping ZDBAdPageCallback) {
         
         if imageArray.count <= 1 {
             pageControl.isHidden = true

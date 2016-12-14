@@ -44,7 +44,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UITabBarControllerDelegat
             let nav = UINavigationController(rootViewController: loginVC)
             
             tabBarController.present(nav, animated: true, completion: {
-                
             })
         }
     }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PassengerViewController" customModule="_2306ForMac" customModuleProvider="target">
+            <connections>
+                <outlet property="passengerCheckBox" destination="YLs-Ia-aFu" id="qfm-g9-2iu"/>
+                <outlet property="view" destination="Utr-ah-5fF" id="uDd-Pt-ppg"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Utr-ah-5fF">
+            <rect key="frame" x="0.0" y="0.0" width="68" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YLs-Ia-aFu">
+                    <rect key="frame" x="3" y="4" width="62" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="8VK-uA-pZH"/>
+                    </constraints>
+                    <buttonCell key="cell" type="check" title="乘客" bezelStyle="regularSquare" imagePosition="left" alignment="left" lineBreakMode="truncatingTail" state="on" inset="2" id="jGx-G7-j9x">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="unSelectPassenger:" target="-2" id="E66-je-SQT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="YLs-Ia-aFu" firstAttribute="leading" secondItem="Utr-ah-5fF" secondAttribute="leading" constant="5" id="MWz-DG-GZu"/>
+                <constraint firstItem="YLs-Ia-aFu" firstAttribute="centerY" secondItem="Utr-ah-5fF" secondAttribute="centerY" id="NjD-BF-4fw"/>
+                <constraint firstAttribute="trailing" secondItem="YLs-Ia-aFu" secondAttribute="trailing" constant="5" id="ihF-oU-A7W"/>
+            </constraints>
+            <point key="canvasLocation" x="233" y="372"/>
+        </customView>
+    </objects>
+</document>
